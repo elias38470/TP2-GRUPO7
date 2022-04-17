@@ -71,7 +71,5 @@ public class Calculos {
 		if((dia>=21 && mes==9) || mes==10 || mes==11 || (dia<21 && mes==12)) {
 			System.out.println("Estacion: Primavera");
 		}
-		
 	}
-
 }
