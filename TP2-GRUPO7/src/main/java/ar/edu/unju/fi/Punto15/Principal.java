@@ -19,7 +19,5 @@ public class Principal {
 		
 		Calculos datos = new Calculos();
 		datos.calcularDatos(nombrePersona, fechaN);
-		
 	}
-
 }
