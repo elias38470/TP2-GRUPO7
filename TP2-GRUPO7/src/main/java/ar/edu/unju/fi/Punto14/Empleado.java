@@ -1,8 +1,9 @@
-package ar.edu.unju.fi.Punto13;
+package ar.edu.unju.fi.Punto14;
 
 import java.time.LocalDate;
 
 public class Empleado {
+	
 	@Override
 	public String toString() {
 		return "Empleado [Nombre=" + Nombre + ", fecha=" + fecha + ", Legajo=" + Legajo + ", Email=" + Email
@@ -29,4 +30,35 @@ public class Empleado {
 		}
 	  return Sueldo;
   }
+
+  
+  //Constructores
+  
+ 
+public Empleado() {
+
+}
+public Empleado(String nombre, int legajo, int horasTrabajadas) {
+	fecha = LocalDate.of(1900, 1, 1);
+	Nombre = nombre;
+	Legajo = legajo;
+	HorasTrabajadas = horasTrabajadas;
+}
+
+
+public Empleado(String nombre, LocalDate fecha, int horasTrabajadas) {
+	
+	Nombre = nombre;
+    Legajo = -9999;
+	HorasTrabajadas = horasTrabajadas;
+}
+
+
+public Empleado(String nombre, int horasTrabajadas) {
+  fecha = LocalDate.of(1900, 1, 1);
+	Nombre = nombre;
+	Legajo = -9999;
+	HorasTrabajadas = horasTrabajadas;
+}
+ 
 }
