@@ -102,7 +102,7 @@ public class Principal {
 		{
 			try
 			{
-		
+		band=false;
 	    System.out.println("Ingresar una fecha (dd/MM/yyyy) : "); 
 		String fechaStr2 = scanner.next();
 		fechaLd2 = LocalDate.parse(fechaStr2, formateador);
